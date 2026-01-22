@@ -44,9 +44,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-body.lock-scroll {
-  overflow: hidden;
-}
+
 
 /* Found this through Google AI Overview */
 .gradient-text {
