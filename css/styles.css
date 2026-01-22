@@ -44,7 +44,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
+body.lock-scroll {
+  overflow: hidden;
+}
 
 /* Found this through Google AI Overview */
 .gradient-text {
@@ -454,8 +456,9 @@ body::-webkit-scrollbar {
   isolation: isolate;
 }
 
-/* enable interaction on links only */
-.topbar-overlay a {
+/* enable interaction + positioning context on BOTH <a> and <button.topbar-link> */
+.topbar-overlay a,
+.topbar-overlay .topbar-link {
   pointer-events: auto;
   position: relative;
   text-decoration: none;
@@ -465,6 +468,18 @@ body::-webkit-scrollbar {
   letter-spacing: -0.015em;
 
   color: inherit;
+}
+
+/* keep button reset (so it doesn't look like a button) */
+.topbar-overlay button.topbar-link {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  line-height: 1;
 }
 
 /* base text, black on plain background */
