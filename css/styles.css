@@ -456,7 +456,7 @@ body.lock-scroll {
   isolation: isolate;
 }
 
-/* enable interaction + positioning context on BOTH <a> and <button.topbar-link> */
+/* enable interaction */
 .topbar-overlay a,
 .topbar-overlay .topbar-link {
   pointer-events: auto;
@@ -470,7 +470,7 @@ body.lock-scroll {
   color: inherit;
 }
 
-/* keep button reset (so it doesn't look like a button) */
+/* keep button reset */
 .topbar-overlay button.topbar-link {
   background: transparent;
   border: 0;
@@ -727,9 +727,9 @@ body.lock-scroll {
   }
 }
 
-/* INFO DROPDOWN (clean) */
+/* INFO DROPDOWN */
 
-/* Make buttons behave like your topbar links */
+/* make buttons behave like your topbar links */
 .topbar-overlay .topbar-link {
   pointer-events: auto;
   background: transparent;
@@ -745,7 +745,7 @@ body.lock-scroll {
   line-height: 1;
 }
 
-/* Backdrop to dim page */
+/* backdrop to dim page */
 .info-backdrop {
   position: fixed;
   inset: 0;
@@ -753,7 +753,7 @@ body.lock-scroll {
   z-index: 900;
 }
 
-/* Panel positioning (extends left by widening while keeping right anchored) */
+/* panel positioning */
 .info-panel {
   position: fixed;
   top: 72px;
@@ -762,13 +762,11 @@ body.lock-scroll {
   z-index: 1001;
 }
 
-/* Hard guarantee: hidden means hidden */
 .info-backdrop[hidden],
 .info-panel[hidden] {
   display: none !important;
 }
 
-/* Single unified surface */
 .info-card {
   position: relative;
 
@@ -788,14 +786,13 @@ body.lock-scroll {
   overflow: hidden;
 }
 
-/* Layout: image left, content right */
 .info-rowLayout {
   display: flex;
   align-items: flex-start;
   gap: 18px;
 }
 
-/* Left square image (embedded: NO drop shadow) */
+/* image */
 .info-hero {
   flex: 0 0 156px;
   width: 156px;
@@ -839,13 +836,12 @@ body.lock-scroll {
   pointer-events: none;
 }
 
-/* Right content column */
+/* right content column */
 .info-right {
   flex: 1 1 auto;
   min-width: 0;
 }
 
-/* Header row: label left, optional action right */
 .info-headRow {
   display: flex;
   align-items: baseline;
@@ -876,7 +872,7 @@ body.lock-scroll {
   cursor: pointer;
 }
 
-/* Experience list */
+/* experience list */
 .info-list {
   list-style: none;
   margin: 0;
@@ -928,7 +924,6 @@ body.lock-scroll {
   white-space: nowrap;
 }
 
-/* Responsive */
 @media (max-width: 760px) {
   .info-panel {
     left: 12px;
